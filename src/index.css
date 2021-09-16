@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1b21 !important;
+  overflow-y: hidden;
+  color: white !important;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ed4a63 #5555;
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #ed4a63;
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+  border-radius: 10px;
+}
+
+html ::-webkit-scrollbar-track {
+  background-color: #5555;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

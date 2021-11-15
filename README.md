@@ -1,5 +1,11 @@
+<p align="center">
 Projeto em andamento. Versão 1.0
+</p>
 
-# Getting Started with Create React App
+<div align="center">
+<img src="https://user-images.githubusercontent.com/87316285/141811898-786554da-575f-4dd9-aab4-f4766411d66e.png" width="700px" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<img src="https://user-images.githubusercontent.com/87316285/141811959-40f41a52-09ba-404c-a0b1-228c80289951.png" width="700px" />
+</div>

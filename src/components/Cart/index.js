@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   CartArea,
@@ -19,9 +19,21 @@ export default () => {
   //let subtotal = 0;
   let products = useSelector((state) => state.cart.products);
   let teste = useSelector((state) => state.cart.products.price);
-  console.log(teste);
   let dispatch = useDispatch();
   const [cartOpen, setCartOpen] = useState(false);
+  const [results, setResults] = useState("");
+
+  function price() {
+    let result = products.reduce(
+      (total, item) => (total += item.price * item.qt),
+      0
+    );
+    setResults(result);
+  }
+  useEffect(() => {
+    price();
+  }, [products]);
+
   function handleClick() {
     setCartOpen(!cartOpen);
   }
@@ -75,6 +87,13 @@ export default () => {
                   </ProductItem>
                 ))}
               </ProductsArea>
+              <h3>
+                Total:{" "}
+                {results.toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}{" "}
+              </h3>
             </CartBody>
           </>
         ) : (

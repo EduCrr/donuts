@@ -48,6 +48,7 @@ export const CartBody = styled.div`
   z-index: 999;
   position: fixed;
   background-color: #1c1b21;
+  overflow-y: scroll;
   a {
     border: 0;
     cursor: pointer;
